@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		147123591700A87400348375 /* Tours.m in Sources */ = {isa = PBXBuildFile; fileRef = 147123581700A87400348375 /* Tours.m */; };
+		149D3C6916FA1056008E4627 /* 60-signpost.png in Resources */ = {isa = PBXBuildFile; fileRef = 149D3C6816FA1056008E4627 /* 60-signpost.png */; };
+		149D3C6D16FA108C008E4627 /* 103-map.png in Resources */ = {isa = PBXBuildFile; fileRef = 149D3C6C16FA108C008E4627 /* 103-map.png */; };
+		149D3C6F16FA1099008E4627 /* 113-navigation.png in Resources */ = {isa = PBXBuildFile; fileRef = 149D3C6E16FA1099008E4627 /* 113-navigation.png */; };
+		149D3C7116FA1392008E4627 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149D3C7016FA1391008E4627 /* MapKit.framework */; };
 		14C740C016F826F500B4024F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C740BF16F826F500B4024F /* UIKit.framework */; };
 		14C740C216F826F500B4024F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C740C116F826F500B4024F /* Foundation.framework */; };
 		14C740C416F826F500B4024F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14C740C316F826F500B4024F /* CoreGraphics.framework */; };
@@ -20,6 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		147123571700A87400348375 /* Tours.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tours.h; sourceTree = "<group>"; };
+		147123581700A87400348375 /* Tours.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tours.m; sourceTree = "<group>"; };
+		149D3C6816FA1056008E4627 /* 60-signpost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60-signpost.png"; sourceTree = "<group>"; };
+		149D3C6C16FA108C008E4627 /* 103-map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "103-map.png"; sourceTree = "<group>"; };
+		149D3C6E16FA1099008E4627 /* 113-navigation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "113-navigation.png"; sourceTree = "<group>"; };
+		149D3C7016FA1391008E4627 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		14C740BB16F826F500B4024F /* Campus Tour Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Campus Tour Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C740BF16F826F500B4024F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		14C740C116F826F500B4024F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -41,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				149D3C7116FA1392008E4627 /* MapKit.framework in Frameworks */,
 				14C740C016F826F500B4024F /* UIKit.framework in Frameworks */,
 				14C740C216F826F500B4024F /* Foundation.framework in Frameworks */,
 				14C740C416F826F500B4024F /* CoreGraphics.framework in Frameworks */,
@@ -53,6 +65,7 @@
 		14C740B016F826F500B4024F = {
 			isa = PBXGroup;
 			children = (
+				149D3C7016FA1391008E4627 /* MapKit.framework */,
 				14C740C516F826F500B4024F /* Campus Tour Buddy */,
 				14C740BE16F826F500B4024F /* Frameworks */,
 				14C740BC16F826F500B4024F /* Products */,
@@ -83,6 +96,8 @@
 				14C740CE16F826F500B4024F /* AppDelegate.h */,
 				14C740CF16F826F500B4024F /* AppDelegate.m */,
 				14C740D716F826F500B4024F /* MainStoryboard.storyboard */,
+				147123571700A87400348375 /* Tours.h */,
+				147123581700A87400348375 /* Tours.m */,
 				14C740C616F826F500B4024F /* Supporting Files */,
 			);
 			path = "Campus Tour Buddy";
@@ -98,6 +113,9 @@
 				14C740D116F826F500B4024F /* Default.png */,
 				14C740D316F826F500B4024F /* Default@2x.png */,
 				14C740D516F826F500B4024F /* Default-568h@2x.png */,
+				149D3C6816FA1056008E4627 /* 60-signpost.png */,
+				149D3C6C16FA108C008E4627 /* 103-map.png */,
+				149D3C6E16FA1099008E4627 /* 113-navigation.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -158,6 +176,9 @@
 				14C740D416F826F500B4024F /* Default@2x.png in Resources */,
 				14C740D616F826F500B4024F /* Default-568h@2x.png in Resources */,
 				14C740D916F826F500B4024F /* MainStoryboard.storyboard in Resources */,
+				149D3C6916FA1056008E4627 /* 60-signpost.png in Resources */,
+				149D3C6D16FA108C008E4627 /* 103-map.png in Resources */,
+				149D3C6F16FA1099008E4627 /* 113-navigation.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,6 +191,7 @@
 			files = (
 				14C740CC16F826F500B4024F /* main.m in Sources */,
 				14C740D016F826F500B4024F /* AppDelegate.m in Sources */,
+				147123591700A87400348375 /* Tours.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,10 +270,14 @@
 		14C740E316F826F500B4024F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Campus Tour Buddy/Campus Tour Buddy-Prefix.pch";
 				INFOPLIST_FILE = "Campus Tour Buddy/Campus Tour Buddy-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -259,10 +285,14 @@
 		14C740E416F826F500B4024F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Campus Tour Buddy/Campus Tour Buddy-Prefix.pch";
 				INFOPLIST_FILE = "Campus Tour Buddy/Campus Tour Buddy-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -286,6 +316,7 @@
 				14C740E416F826F500B4024F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
