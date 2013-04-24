@@ -1,11 +1,11 @@
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSInteger, PVMapOption ) {
-    PVMapBoundary = 0,
-    PVMapOverlay,
-    PVMapPins,
-    PVMapCharacterLocation,
-    PVMapRoute
+    Athletic = 0,
+    Scholastic,
+    General,
+    Dorm,
+    ComputerSci
 };
 
 @interface Tours : UIViewController <UITableViewDelegate, UITableViewDataSource>

@@ -13,19 +13,19 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"OptionCell"];
     switch (indexPath.row) {
-        case PVMapBoundary:
+        case Athletic:
             cell.textLabel.text = @"Athletic Tour";
             break;
-        case PVMapOverlay:
+        case Scholastic:
             cell.textLabel.text = @"Scholastic Tour";
             break;
-        case PVMapPins:
+        case General:
             cell.textLabel.text = @"General Tour";
             break;
-        case PVMapCharacterLocation:
+        case Dorm:
             cell.textLabel.text = @"Dorm Tour";
             break;
-        case PVMapRoute:
+        case ComputerSci:
             cell.textLabel.text = @"Computer Science Tour";
             break;
         default:

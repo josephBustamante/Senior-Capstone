@@ -18,7 +18,7 @@
                                         <nil key="title"/>
                                         <barButtonItem key="rightBarButtonItem" title="Tours and Places" id="non-uN-78a">
                                             <connections>
-                                                <segue destination="y45-Op-Dvj" kind="modal" id="1dV-Wa-uei"/>
+                                                <segue destination="ULL-LZ-ZiE" kind="push" id="QTb-9D-M58"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -51,81 +51,104 @@
             </objects>
             <point key="canvasLocation" x="766" y="305"/>
         </scene>
-        <!--Tours-->
-        <scene sceneID="cON-g2-ZJs">
+        <!--View Controller - Item 2-->
+        <scene sceneID="O51-yg-T1s">
             <objects>
-                <viewController id="y45-Op-Dvj" customClass="Tours" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pwY-61-ppC">
-                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                <viewController id="5mq-ef-HT6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3AS-a9-PE8">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="HR4-y3-XgC">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="OptionCell" textLabel="2iY-hv-XuT" style="IBUITableViewCellStyleDefault" id="Pak-vy-Mek">
-                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Option" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2iY-hv-XuT">
-                                                    <rect key="frame" x="10" y="0.0" width="300" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </label>
-                                            </subviews>
-                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                        </view>
-                                    </tableViewCell>
-                                </prototypes>
-                                <sections/>
-                                <connections>
-                                    <outlet property="dataSource" destination="y45-Op-Dvj" id="Jgx-6O-0cs"/>
-                                    <outlet property="delegate" destination="y45-Op-Dvj" id="7zP-hr-XfC"/>
-                                </connections>
-                            </tableView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVC-lH-uY4">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nSm-Dy-HOA">
                                 <items>
-                                    <navigationItem id="Yrc-6B-xq4">
+                                    <navigationItem id="v3a-ba-wZN">
                                         <nil key="title"/>
-                                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="F2y-OZ-Qxd">
-                                            <connections>
-                                                <segue destination="Kf1-Ga-vw4" kind="unwind" unwindAction="closeOptions:" id="9Bo-88-HyM"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Oxp-IA-uBh">
-                                            <rect key="frame" x="83" y="6" width="154" height="32"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <segments>
-                                                <segment title="Tours"/>
-                                                <segment title="Places"/>
-                                            </segments>
-                                        </segmentedControl>
+                                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="ZVU-sl-JTd"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="hVC-lH-uY4" firstAttribute="trailing" secondItem="pwY-61-ppC" secondAttribute="trailing" type="default" id="9WK-0o-Jt6"/>
-                            <constraint firstItem="hVC-lH-uY4" firstAttribute="leading" secondItem="pwY-61-ppC" secondAttribute="leading" type="default" id="AJT-GF-10b"/>
-                            <constraint firstItem="hVC-lH-uY4" firstAttribute="top" secondItem="pwY-61-ppC" secondAttribute="top" type="default" id="MHn-uO-J2q"/>
-                            <constraint firstItem="HR4-y3-XgC" firstAttribute="top" secondItem="hVC-lH-uY4" secondAttribute="bottom" type="default" id="N8V-HS-w0W"/>
-                            <constraint firstItem="HR4-y3-XgC" firstAttribute="trailing" secondItem="pwY-61-ppC" secondAttribute="trailing" type="default" id="ODQ-rS-OSJ"/>
-                            <constraint firstItem="HR4-y3-XgC" firstAttribute="bottom" secondItem="pwY-61-ppC" secondAttribute="bottom" type="default" id="Ohq-cx-4af"/>
-                            <constraint firstItem="HR4-y3-XgC" firstAttribute="leading" secondItem="pwY-61-ppC" secondAttribute="leading" type="default" id="Xcg-jL-FMs"/>
+                            <constraint firstItem="nSm-Dy-HOA" firstAttribute="top" secondItem="3AS-a9-PE8" secondAttribute="top" type="default" id="OzD-vR-qmo"/>
+                            <constraint firstItem="nSm-Dy-HOA" firstAttribute="trailing" secondItem="3AS-a9-PE8" secondAttribute="trailing" type="default" id="kDz-5H-nVi"/>
+                            <constraint firstItem="nSm-Dy-HOA" firstAttribute="leading" secondItem="3AS-a9-PE8" secondAttribute="leading" type="default" id="qVP-lw-goW"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="zVe-aE-Mm0"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="YjC-6B-igD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="Kf1-Ga-vw4" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MgG-7o-vAJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1364" y="305"/>
+            <point key="canvasLocation" x="1262" y="-372"/>
+        </scene>
+        <!--View Controller - Item 1-->
+        <scene sceneID="cSY-m2-I6g">
+            <objects>
+                <viewController id="NKD-td-gfr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kbn-AE-kiG">
+                        <rect key="frame" x="0.0" y="20" width="320" height="499"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVC-lH-uY4">
+                                <items>
+                                    <navigationItem id="Yrc-6B-xq4">
+                                        <nil key="title"/>
+                                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="F2y-OZ-Qxd"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hVC-lH-uY4" firstAttribute="leading" secondItem="kbn-AE-kiG" secondAttribute="leading" type="default" id="4Xa-F6-6Lz"/>
+                            <constraint firstItem="hVC-lH-uY4" firstAttribute="top" secondItem="kbn-AE-kiG" secondAttribute="top" type="default" id="6hO-JY-Gyk"/>
+                            <constraint firstItem="hVC-lH-uY4" firstAttribute="trailing" secondItem="kbn-AE-kiG" secondAttribute="trailing" type="default" id="rcI-mV-0TH"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="lHG-0Q-T7h"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="otO-IA-KBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1658" y="-372"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="OIK-gC-Na9">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="ULL-LZ-ZiE" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Buz-Fg-WEg"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="cQH-fk-cIy">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="NKD-td-gfr" kind="relationship" relationship="viewControllers" id="5Fz-of-VLg"/>
+                        <segue destination="5mq-ef-HT6" kind="relationship" relationship="viewControllers" id="I2s-u7-fZf"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bQj-N4-Gtu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1280" y="305"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="MapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MapViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="closeOptions:" candidateClass="UIStoryboardSegue"/>
+                <relationship kind="action" name="mapTypeChanged:"/>
+                <relationship kind="outlet" name="mapTypeSegmentedControl" candidateClass="UISegmentedControl"/>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UIStoryboardSegue" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
